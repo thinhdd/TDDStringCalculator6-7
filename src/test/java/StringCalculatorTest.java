@@ -1,5 +1,7 @@
 import org.junit.Assert;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 /**
  * Created with IntelliJ IDEA.
@@ -38,5 +40,13 @@ public class StringCalculatorTest {
     public void testOneSpecDel()
     {
         Assert.assertEquals(StringCalculator.add("//;\n1;2;3"),6);
+    }
+    @Rule
+    public ExpectedException ex = ExpectedException.none();
+    @Test
+    public void testNegaNum()
+    {
+        ex.expectMessage("-1 -2 ");
+        Assert.assertEquals(StringCalculator.add("-1,-2,3"),-1);
     }
 }

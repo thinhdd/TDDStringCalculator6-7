@@ -27,12 +27,18 @@ public class StringCalculator {
     public static int Sum(String s, String deli)
     {
         int sum=0;
+        String list = "";
         String cur[] = s.split(deli);
         for (String i: cur)
         {
-            if(!i.isEmpty())
+            if(!i.isEmpty()){
+                if(Integer.parseInt(i)<0)
+                    list = list + i + " ";
                 sum=sum+Integer.parseInt(i);
+            }
         }
+        if (list.length()>0)
+            throw new IllegalArgumentException(list);
         return sum;
     }
     public static int getComplexs(String deli, String listnum)
