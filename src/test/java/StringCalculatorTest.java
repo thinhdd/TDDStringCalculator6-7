@@ -14,4 +14,9 @@ public class StringCalculatorTest {
     {
         Assert.assertEquals(StringCalculator.add(""), 0);
     }
+    @Test
+    public void testOneN()
+    {
+        Assert.assertEquals(StringCalculator.add("1"),1);
+    }
 }
