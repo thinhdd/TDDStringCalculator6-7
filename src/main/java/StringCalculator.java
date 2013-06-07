@@ -9,6 +9,6 @@ public class StringCalculator {
     public static int add(String s) {
         if(s.isEmpty())
             return 0;
-        return 0;  //To change body of created methods use File | Settings | File Templates.
+        return Integer.parseInt(s);  //To change body of created methods use File | Settings | File Templates.
     }
 }
