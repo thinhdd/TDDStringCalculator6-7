@@ -24,4 +24,9 @@ public class StringCalculatorTest {
     {
         Assert.assertEquals(StringCalculator.add("1,2"),3);
     }
+    @Test
+    public void testTwoDe()
+    {
+        Assert.assertEquals(StringCalculator.add("1,2\n3"),6);
+    }
 }
