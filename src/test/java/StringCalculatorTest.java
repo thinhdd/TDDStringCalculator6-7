@@ -19,4 +19,9 @@ public class StringCalculatorTest {
     {
         Assert.assertEquals(StringCalculator.add("1"),1);
     }
+    @Test
+    public void testOneDe()
+    {
+        Assert.assertEquals(StringCalculator.add("1,2"),3);
+    }
 }
