@@ -29,4 +29,9 @@ public class StringCalculatorTest {
     {
         Assert.assertEquals(StringCalculator.add("1,2\n3"),6);
     }
+    @Test
+    public void testErrorTwo()
+    {
+        Assert.assertEquals(StringCalculator.add("1,\n2"),-1);
+    }
 }

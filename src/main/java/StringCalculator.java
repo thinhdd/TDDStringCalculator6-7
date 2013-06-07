@@ -9,6 +9,8 @@ public class StringCalculator {
     public static int add(String s) {
         if(s.isEmpty())
             return 0;
+        if(s.contains(",\n") || s.contains("\n,"))
+            return -1;
         if (s.contains("\n") || s.contains(","))
         {
             return Sum(s, "[,\n]");
