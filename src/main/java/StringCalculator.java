@@ -32,9 +32,10 @@ public class StringCalculator {
         for (String i: cur)
         {
             if(!i.isEmpty()){
+                if(Integer.parseInt(i)<1000)
+                    sum=sum+Integer.parseInt(i);
                 if(Integer.parseInt(i)<0)
                     list = list + i + " ";
-                sum=sum+Integer.parseInt(i);
             }
         }
         if (list.length()>0)
