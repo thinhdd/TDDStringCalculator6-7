@@ -49,4 +49,9 @@ public class StringCalculatorTest {
         ex.expectMessage("-1 -2 ");
         Assert.assertEquals(StringCalculator.add("-1,-2,3"),-1);
     }
+    @Test
+    public void testBigNum()
+    {
+        Assert.assertEquals(StringCalculator.add("1000,2"),2);
+    }
 }
