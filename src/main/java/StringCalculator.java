@@ -9,9 +9,9 @@ public class StringCalculator {
     public static int add(String s) {
         if(s.isEmpty())
             return 0;
-        if (s.contains(","))
+        if (s.contains("\n") || s.contains(","))
         {
-            return Sum(s, ",");
+            return Sum(s, "[,\n]");
         }
         return Integer.parseInt(s);  //To change body of created methods use File | Settings | File Templates.
     }
