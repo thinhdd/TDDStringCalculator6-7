@@ -44,6 +44,16 @@ public class StringCalculator {
     }
     public static int getComplexs(String deli, String listnum)
     {
+        String del="";
+        if(deli.contains("]["))
+        {
+            String curs = deli.substring(3, deli.length()-1);
+            String cur[] = curs.split(Pattern.quote("]["));
+            for(String i: cur)
+                del = del+Pattern.quote(i+"+");
+            del = "["+ del+"]";
+            return Sum(listnum,del);
+        }
         if(deli.length()==3)
             return Sum(listnum, Pattern.quote(String.valueOf(deli.charAt(2))));
         else
