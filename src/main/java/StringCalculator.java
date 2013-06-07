@@ -12,6 +12,10 @@ public class StringCalculator {
     public static int add(String s) {
         if(s.isEmpty())
             return 0;
+        if(s.contains("\n") && s.contains("//"))
+        {
+            return  getComplexs(s.split("\n")[0],s.split("\n")[1]);
+        }
         if(s.contains(",\n") || s.contains("\n,"))
             return -1;
         if (s.contains("\n") || s.contains(","))
@@ -31,5 +35,10 @@ public class StringCalculator {
         }
         return sum;
     }
-
+    public static int getComplexs(String deli, String listnum)
+    {
+        if(deli.length()==3)
+            return Sum(listnum, Pattern.quote(String.valueOf(deli.charAt(2))));
+        return 0;
+    }
 }
