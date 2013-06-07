@@ -1,3 +1,5 @@
+import java.util.regex.Pattern;
+
 /**
  * Created with IntelliJ IDEA.
  * User: thinhdd
@@ -6,6 +8,7 @@
  * To change this template use File | Settings | File Templates.
  */
 public class StringCalculator {
+
     public static int add(String s) {
         if(s.isEmpty())
             return 0;
@@ -28,4 +31,5 @@ public class StringCalculator {
         }
         return sum;
     }
+
 }

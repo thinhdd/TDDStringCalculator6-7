@@ -34,4 +34,9 @@ public class StringCalculatorTest {
     {
         Assert.assertEquals(StringCalculator.add("1,\n2"),-1);
     }
+    @Test
+    public void testOneSpecDel()
+    {
+        Assert.assertEquals(StringCalculator.add("//;\n1;2;3"),6);
+    }
 }
