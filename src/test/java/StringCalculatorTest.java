@@ -54,4 +54,9 @@ public class StringCalculatorTest {
     {
         Assert.assertEquals(StringCalculator.add("1000,2"),2);
     }
+    @Test
+    public void testStringDeli()
+    {
+        Assert.assertEquals(StringCalculator.add("//[***]\n1***2***3"),6);
+    }
 }

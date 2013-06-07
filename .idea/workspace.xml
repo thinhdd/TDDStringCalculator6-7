@@ -78,7 +78,7 @@
       <file leaf-file-name="StringCalculatorTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/StringCalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="20" selection-start="289" selection-end="289" vertical-scroll-proportion="0.5224719">
+            <state line="12" column="28" selection-start="297" selection-end="297" vertical-scroll-proportion="0.33146068">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,7 +89,7 @@
       <file leaf-file-name="StringCalculator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/StringCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="42" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
+            <state line="49" column="82" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -472,14 +472,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/StringCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="42" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
+        <state line="49" column="82" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StringCalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="289" selection-end="289" vertical-scroll-proportion="0.5224719">
+        <state line="12" column="28" selection-start="297" selection-end="297" vertical-scroll-proportion="0.33146068">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

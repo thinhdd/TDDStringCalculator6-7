@@ -46,6 +46,7 @@ public class StringCalculator {
     {
         if(deli.length()==3)
             return Sum(listnum, Pattern.quote(String.valueOf(deli.charAt(2))));
-        return 0;
+        else
+            return Sum(listnum,Pattern.quote(deli.substring(3, deli.length()-1)));
     }
 }
