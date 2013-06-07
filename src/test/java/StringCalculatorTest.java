@@ -59,4 +59,9 @@ public class StringCalculatorTest {
     {
         Assert.assertEquals(StringCalculator.add("//[***]\n1***2***3"),6);
     }
+    @Test
+    public void testMutiOneDeli()
+    {
+        Assert.assertEquals(StringCalculator.add("//[*][%]\n1*2%3"),6);
+    }
 }
